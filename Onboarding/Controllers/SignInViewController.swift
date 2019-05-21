@@ -32,7 +32,7 @@ class SignInViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: "hasViewedOnboarding")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
+        if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController") as? HomeNavigationController {
             present(homeViewController, animated: true, completion: nil)
         }
     }

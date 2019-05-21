@@ -20,6 +20,8 @@
 		5722659D229495B700125170 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722659C229495B700125170 /* SignUpViewController.swift */; };
 		572265A02294968400125170 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722659F2294968400125170 /* CurrentUser.swift */; };
 		572265A222949D9800125170 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A122949D9800125170 /* Task.swift */; };
+		572265A42294A58400125170 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A32294A58300125170 /* TaskController.swift */; };
+		572265A62294AC3200125170 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A52294AC3200125170 /* HomeNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5722659C229495B700125170 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5722659F2294968400125170 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		572265A122949D9800125170 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		572265A32294A58300125170 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		572265A52294AC3200125170 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				570385382294367D00695951 /* HomeCollectionViewController.swift */,
 				5722659A229495A400125170 /* SignInViewController.swift */,
 				5722659C229495B700125170 /* SignUpViewController.swift */,
+				572265A32294A58300125170 /* TaskController.swift */,
+				572265A52294AC3200125170 /* HomeNavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,9 +219,11 @@
 				57038517229380CB00695951 /* AppDelegate.swift in Sources */,
 				5722659B229495A400125170 /* SignInViewController.swift in Sources */,
 				570385352293BD5000695951 /* OnboardingPageViewController.swift in Sources */,
+				572265A62294AC3200125170 /* HomeNavigationController.swift in Sources */,
 				5703852F2293BA8500695951 /* OnboardingContentViewController.swift in Sources */,
 				572265A02294968400125170 /* CurrentUser.swift in Sources */,
 				572265A222949D9800125170 /* Task.swift in Sources */,
+				572265A42294A58400125170 /* TaskController.swift in Sources */,
 				5703853722942EFB00695951 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

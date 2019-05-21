@@ -11,8 +11,12 @@ import UIKit
 
 class HomeCollectionViewController: UICollectionViewController {
     
+    let taskController = TaskController()
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.bool(forKey: "hasViewedOnboarding") {
