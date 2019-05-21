@@ -10,18 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Rubik-Bold.ttf">
-            <string>Rubik-Bold</string>
-        </array>
         <array key="Rubik-Regular.ttf">
             <string>Rubik-Regular</string>
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding View Controller-->
         <scene sceneID="gwS-JW-hQV">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughViewController" id="rHP-Dy-Heq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" id="rHP-Dy-Heq" customClass="OnboardingViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLE-mL-i7t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,15 +82,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D3A-II-Zgd"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="fbe-CX-z20" id="Ulo-h4-AIl"/>
+                        <outlet property="pageControl" destination="Rly-lH-BIE" id="xda-aC-tXb"/>
+                        <outlet property="skipButton" destination="RVh-Wj-LH6" id="OuJ-S3-wQG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwt-Ez-0Wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-833.33333333333337" y="143.97321428571428"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Onboarding Page View Controller-->
         <scene sceneID="mfk-PC-k1r">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xTB-SQ-OYr" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="OnbaordingPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xTB-SQ-OYr" customClass="OnboardingPageViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBo-3K-90Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-46" y="42"/>
@@ -101,35 +103,35 @@
         <!--Onboarding Content View Controller-->
         <scene sceneID="94G-xl-XdL">
             <objects>
-                <viewController storyboardIdentifier="OboardingContentViewController" id="go5-oZ-dbD" customClass="OnboardingContentViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingContentViewController" id="go5-oZ-dbD" customClass="OnboardingContentViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCe-2e-ddZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-uF-d9n">
-                                <rect key="frame" x="24" y="94" width="327" height="352"/>
+                                <rect key="frame" x="24" y="94" width="327" height="354.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gRT-KK-O3b">
-                                        <rect key="frame" x="126" y="0.0" width="75.5" height="20"/>
+                                        <rect key="frame" x="92" y="0.0" width="143" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-Ef-Nks">
-                                                <rect key="frame" x="0.0" y="0.0" width="75.5" height="20"/>
-                                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="35"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                <color key="textColor" red="0.058823529411764705" green="0.098039215686274508" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rwz-EN-t5w">
-                                        <rect key="frame" x="11.5" y="70" width="304" height="213"/>
+                                        <rect key="frame" x="20.5" y="85" width="286" height="200.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rwz-EN-t5w" secondAttribute="height" multiplier="327:229" id="kjw-87-eoK"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subheading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkn-3w-ZYY">
-                                        <rect key="frame" x="120.5" y="333" width="86" height="19"/>
+                                        <rect key="frame" x="120.5" y="335.5" width="86" height="19"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.0" green="0.058823529411764705" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>

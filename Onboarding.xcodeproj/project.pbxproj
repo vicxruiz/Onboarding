@@ -14,6 +14,8 @@
 		5703852A22938B0000695951 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5703852922938B0000695951 /* Onboarding.storyboard */; };
 		5703852F2293BA8500695951 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703852E2293BA8500695951 /* OnboardingContentViewController.swift */; };
 		570385352293BD5000695951 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570385342293BD5000695951 /* OnboardingPageViewController.swift */; };
+		5703853722942EFB00695951 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703853622942EFB00695951 /* OnboardingViewController.swift */; };
+		570385392294367D00695951 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570385382294367D00695951 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5703852922938B0000695951 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		5703852E2293BA8500695951 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 		570385342293BD5000695951 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		5703853622942EFB00695951 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		570385382294367D00695951 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			children = (
 				5703852E2293BA8500695951 /* OnboardingContentViewController.swift */,
 				570385342293BD5000695951 /* OnboardingPageViewController.swift */,
+				5703853622942EFB00695951 /* OnboardingViewController.swift */,
+				570385382294367D00695951 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570385392294367D00695951 /* HomeViewController.swift in Sources */,
 				57038517229380CB00695951 /* AppDelegate.swift in Sources */,
 				570385352293BD5000695951 /* OnboardingPageViewController.swift in Sources */,
 				5703852F2293BA8500695951 /* OnboardingContentViewController.swift in Sources */,
+				5703853722942EFB00695951 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

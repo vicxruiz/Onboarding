@@ -12,14 +12,18 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
     
     
     var pageHeadings = ["Connect With People Around The World", "Let's Build New Connections With New People", "Feel The Happiness"]
-    var pageSubheadings = ["onboarding1", "onboarding2", "onboarind3"]
-    var pageImages = ["Users will be able to go live, chat and meet with people near by.", "Connect helps you locate the people around you who are closest from your home town!", "Users will be able to go live, chat and meet with people near by."]
+    var pageImages = ["Onboarding1", "Onboarding2", "Onboarding3"]
+    var pageSubheadings = ["Users will be able to go live, chat and meet with people near by.", "Connect helps you locate the people around you who are closest from your home town!", "Users will be able to go live, chat and meet with people near by."]
     
     var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
+        
+        if let startingViewController = contentViewController(at: 0) {
+            setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
     
     
