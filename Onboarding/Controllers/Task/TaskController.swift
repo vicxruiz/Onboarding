@@ -14,7 +14,7 @@ class TaskController {
     //MARK: Properties
     
     var tasks: [Task] = []
-    let taskNames = ["event", "bag", "soccer-ball", "teacher", "wish-list", "working"]
+    let taskNames = ["bag", "soccer-ball", "teacher", "wish-list", "working"]
     
     //manually create data
     init() {
