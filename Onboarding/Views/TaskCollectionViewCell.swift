@@ -26,9 +26,10 @@ class TaskCollectionViewCell: UICollectionViewCell {
             print("no task")
             return
         }
-//        taskTitleLabel.text = task.taskName
-//        taskDetailLabel.text = ("\(task.numberOfTasks) Tasks")
-//        let taskImage = UIImage(named: task.taskName)
-//        taskImageView.image = taskImage
+        taskTitleLabel.text = task.taskName
+        taskDetailLabel.text = ("\(task.numberOfTasks) Tasks")
+        let taskImage = UIImage(named: task.taskName)
+        taskImageView.image = taskImage
     }
+    
 }

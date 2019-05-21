@@ -76,6 +76,11 @@
                                     <constraint firstAttribute="trailing" secondItem="Xvk-gO-JNq" secondAttribute="trailing" constant="20" id="lIl-ZI-Anr"/>
                                     <constraint firstAttribute="trailing" secondItem="Ian-aq-8c5" secondAttribute="trailing" id="sS2-Ws-GNL"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="taskDetailLabel" destination="Sso-yH-4kr" id="Mnx-cs-xhi"/>
+                                    <outlet property="taskImageView" destination="e6S-ap-VOe" id="QGh-vY-9T2"/>
+                                    <outlet property="taskTitleLabel" destination="Vfk-tP-EUb" id="iGE-zn-RA6"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
