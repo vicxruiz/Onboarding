@@ -101,7 +101,7 @@
         <!--Onboarding Content View Controller-->
         <scene sceneID="94G-xl-XdL">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughContentViewController" id="go5-oZ-dbD" customClass="OnboardingContentViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OboardingContentViewController" id="go5-oZ-dbD" customClass="OnboardingContentViewController" customModule="Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCe-2e-ddZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
