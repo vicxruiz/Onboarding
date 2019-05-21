@@ -16,7 +16,7 @@ struct Task: Equatable, Codable {
     
     init(taskName: String) {
         self.taskName = taskName
-        self.taskDetail = "Tasks"
+        self.taskDetail = ""
         self.numberOfTasks = 0
     }
     

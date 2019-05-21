@@ -22,6 +22,7 @@
 		572265A222949D9800125170 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A122949D9800125170 /* Task.swift */; };
 		572265A42294A58400125170 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A32294A58300125170 /* TaskController.swift */; };
 		572265A62294AC3200125170 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A52294AC3200125170 /* HomeNavigationController.swift */; };
+		572265A82294AE9400125170 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A72294AE9400125170 /* TaskCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		572265A122949D9800125170 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		572265A32294A58300125170 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		572265A52294AC3200125170 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		572265A72294AE9400125170 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		570385312293BAAA00695951 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				572265A72294AE9400125170 /* TaskCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				5703852F2293BA8500695951 /* OnboardingContentViewController.swift in Sources */,
 				572265A02294968400125170 /* CurrentUser.swift in Sources */,
 				572265A222949D9800125170 /* Task.swift in Sources */,
+				572265A82294AE9400125170 /* TaskCollectionViewCell.swift in Sources */,
 				572265A42294A58400125170 /* TaskController.swift in Sources */,
 				5703853722942EFB00695951 /* OnboardingViewController.swift in Sources */,
 			);

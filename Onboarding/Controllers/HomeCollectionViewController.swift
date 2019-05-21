@@ -18,6 +18,19 @@ class HomeCollectionViewController: UICollectionViewController {
         collectionView.reloadData()
     }
     
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return taskController.tasks.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCollectionViewCell
+        
+        let task = taskController.tasks[indexPath.item]
+        cell.task = task
+    
+        return cell
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.bool(forKey: "hasViewedOnboarding") {
             return
