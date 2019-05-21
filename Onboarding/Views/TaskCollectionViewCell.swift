@@ -23,11 +23,12 @@ class TaskCollectionViewCell: UICollectionViewCell {
     
     func updateViews() {
         guard let task = task else {
+            print("no task")
             return
         }
-        taskTitleLabel.text = task.taskName
-        taskDetailLabel.text = ("\(task.numberOfTasks) Tasks")
-        let taskImage = UIImage(named: task.taskName)
-        taskImageView.image = taskImage
+//        taskTitleLabel.text = task.taskName
+//        taskDetailLabel.text = ("\(task.numberOfTasks) Tasks")
+//        let taskImage = UIImage(named: task.taskName)
+//        taskImageView.image = taskImage
     }
 }

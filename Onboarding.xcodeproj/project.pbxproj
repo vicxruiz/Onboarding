@@ -23,6 +23,7 @@
 		572265A42294A58400125170 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A32294A58300125170 /* TaskController.swift */; };
 		572265A62294AC3200125170 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A52294AC3200125170 /* HomeNavigationController.swift */; };
 		572265A82294AE9400125170 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A72294AE9400125170 /* TaskCollectionViewCell.swift */; };
+		572265AA2294B61C00125170 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A92294B61C00125170 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		572265A32294A58300125170 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		572265A52294AC3200125170 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		572265A72294AE9400125170 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		572265A92294B61C00125170 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				5722659C229495B700125170 /* SignUpViewController.swift */,
 				572265A32294A58300125170 /* TaskController.swift */,
 				572265A52294AC3200125170 /* HomeNavigationController.swift */,
+				572265A92294B61C00125170 /* LaunchScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				570385392294367D00695951 /* HomeCollectionViewController.swift in Sources */,
+				572265AA2294B61C00125170 /* LaunchScreenViewController.swift in Sources */,
 				5722659D229495B700125170 /* SignUpViewController.swift in Sources */,
 				57038517229380CB00695951 /* AppDelegate.swift in Sources */,
 				5722659B229495A400125170 /* SignInViewController.swift in Sources */,

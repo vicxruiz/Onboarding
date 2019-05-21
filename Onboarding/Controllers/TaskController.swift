@@ -21,6 +21,7 @@ class TaskController {
     func create() {
         for name in taskNames {
             let taskItem = Task(taskName: name)
+            tasks.append(taskItem)
         }
     }
     
