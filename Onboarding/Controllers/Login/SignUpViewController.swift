@@ -1,5 +1,5 @@
 //
-//  HomeNavigationController.swift
+//  SignUpViewController.swift
 //  Onboarding
 //
 //  Created by Victor  on 5/21/19.
@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class HomeNavigationController: UINavigationController {
+class SignUpViewController: UIViewController {
+    //needs logic
     override func viewDidLoad() {
         super.viewDidLoad()
     }

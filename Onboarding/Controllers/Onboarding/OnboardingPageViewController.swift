@@ -14,6 +14,8 @@ protocol OnboardingPageViewControllerDelegate: class {
 
 class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
+    //MARK: Properties
+    
     weak var onboardingDelegate: OnboardingPageViewControllerDelegate?
     
     var pageHeadings = ["Connect With People Around The World", "Let's Build New Connections With New People", "Feel The Happiness"]
@@ -24,13 +26,16 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //setting data source and delegate to self to configure data
         dataSource = self
         delegate = self
+        //creating screen
         if let startingViewController = contentViewController(at: 0) {
             setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
         }
     }
     
+    //MARK: Data Source
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! OnboardingContentViewController).index
@@ -44,12 +49,14 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
         return contentViewController(at: index)
     }
     
+    //MARK: Helper
+    
     func contentViewController(at index: Int) -> OnboardingContentViewController? {
         if index < 0 || index >= pageHeadings.count {
             return nil
         }
         
-        // Create a new view controller and pass suitable data
+        // Passing data to new vc
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingContentViewController") as? OnboardingContentViewController {
             pageContentViewController.imageFile = pageImages[index]
@@ -59,7 +66,6 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
             
             return pageContentViewController
         }
-        
         return nil
     }
     
@@ -70,11 +76,13 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
         }
     }
     
+    //MARK: Delegate
+    
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        //Updating page view controller with delegation
         if completed {
             if let contentViewController = pageViewController.viewControllers?.first as? OnboardingContentViewController {
                 currentIndex = contentViewController.index
-                
                 onboardingDelegate?.didUpdatePageIndex(currentIndex: currentIndex)
             }
         }

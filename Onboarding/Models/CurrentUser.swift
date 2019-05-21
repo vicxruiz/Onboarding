@@ -8,6 +8,7 @@
 
 import Foundation
 
+//User Object
 struct CurrentUser {
     var name: String
     var phoneNumber: String

@@ -8,16 +8,22 @@
 
 import Foundation
 
+//handles task data
 class TaskController {
     
-    var tasks: [Task] = []
+    //MARK: Properties
     
+    var tasks: [Task] = []
     let taskNames = ["event", "bag", "soccer-ball", "teacher", "wish-list", "working"]
     
+    //manually create data
     init() {
         create()
     }
     
+    //MARK: Helper
+    
+    //adds tasks to array
     func create() {
         for name in taskNames {
             let taskItem = Task(taskName: name)
@@ -25,6 +31,7 @@ class TaskController {
         }
     }
     
+    //updates task in array
     func update(task: Task) {
         guard let index = tasks.index(of: task) else {
             return
@@ -32,4 +39,5 @@ class TaskController {
         var item = task
         tasks[index] = item
     }
+    
 }

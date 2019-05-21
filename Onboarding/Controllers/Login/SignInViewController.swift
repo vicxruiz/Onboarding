@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class SignInViewController: UIViewController {
-    
+    //MARK: Properties
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var signInLabel: UILabel!
     @IBOutlet weak var usernameTextField: UITextField!
@@ -24,11 +24,15 @@ class SignInViewController: UIViewController {
         updateUI()
     }
     
+    //Updates button ui
     private func updateUI() {
         loginButton.layer.masksToBounds = true
         loginButton.layer.cornerRadius = 10
     }
     
+    //MARK: Actions
+    
+    //Navigaiton logic after button is pressed
     @IBAction func loginButtonPressed(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: "hasViewedOnboarding")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

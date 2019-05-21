@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Task Object
 struct Task: Equatable, Codable {
     var taskName: String
     var imageData: Data?

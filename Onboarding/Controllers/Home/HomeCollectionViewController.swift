@@ -11,6 +11,7 @@ import UIKit
 
 class HomeCollectionViewController: UICollectionViewController {
     
+    //passing data
     let taskController = TaskController()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -18,10 +19,12 @@ class HomeCollectionViewController: UICollectionViewController {
         collectionView.reloadData()
     }
     
+    //gets count from task array
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return taskController.tasks.count
     }
     
+    //configures each cell
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCollectionViewCell
         

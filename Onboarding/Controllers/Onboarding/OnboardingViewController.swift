@@ -11,6 +11,8 @@ import UIKit
 
 class OnboardingViewController: UIViewController, OnboardingPageViewControllerDelegate {
     
+    //MARK: Properties
+    
     var onboardingPageViewController: OnboardingPageViewController?
     
     @IBOutlet var pageControl: UIPageControl!
@@ -26,9 +28,10 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
+    
+    //MARK: Actions
     
     @IBAction func skipButtonTapped(sender: UIButton) {
         UserDefaults.standard.set(true, forKey: "hasViewedOnboarding")
@@ -48,6 +51,7 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
         updateUI()
     }
     
+    //Logic to update ui at different screens
     func updateUI() {
         if let index = onboardingPageViewController?.currentIndex {
             switch index {
@@ -61,7 +65,6 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
                 
             default: break
             }
-            
             pageControl.currentPage = index
         }
     }

@@ -11,11 +11,13 @@ import UIKit
 
 class OnboardingContentViewController: UIViewController {
     
+    //MARK: Properties
     @IBOutlet weak var headingLabel: UILabel! {
         didSet {
             headingLabel.numberOfLines = 0
         }
     }
+    
     @IBOutlet weak var subheadingLabel: UILabel! {
         didSet {
             subheadingLabel.numberOfLines = 0
@@ -31,7 +33,6 @@ class OnboardingContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         headingLabel.text = heading
         subheadingLabel.text = subHeading
         contentImageView.image = UIImage(named: imageFile)
