@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
+        if UserDefaults.standard.bool(forKey: "hasViewedOnboarding") {
             return
         }
         

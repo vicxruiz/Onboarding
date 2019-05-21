@@ -21,8 +21,20 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
     }
     
+    private func updateUI() {
+        loginButton.layer.masksToBounds = true
+        loginButton.layer.cornerRadius = 10
+    }
     
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "hasViewedOnboarding")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
+            present(homeViewController, animated: true, completion: nil)
+        }
+    }
     
 }

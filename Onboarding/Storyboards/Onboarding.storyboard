@@ -92,7 +92,7 @@
                         <outlet property="nextButton" destination="fbe-CX-z20" id="Ulo-h4-AIl"/>
                         <outlet property="pageControl" destination="Rly-lH-BIE" id="xda-aC-tXb"/>
                         <outlet property="skipButton" destination="RVh-Wj-LH6" id="OuJ-S3-wQG"/>
-                        <segue destination="lb0-ao-IAc" kind="show" identifier="Login" id="ddc-Pl-cyf"/>
+                        <segue destination="lb0-ao-IAc" kind="showDetail" identifier="Login" id="ddc-Pl-cyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwt-Ez-0Wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -217,6 +217,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="lb0-ao-IAc" eventType="touchUpInside" id="eRx-cN-CDz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwi-22-QTa">
                                 <rect key="frame" x="152" y="375" width="110" height="27"/>
