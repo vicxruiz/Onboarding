@@ -41,13 +41,10 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
             case 0...1:
                 onboardingPageViewController?.forwardPage()
             case 2:
-                UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-                dismiss(animated: true, completion: nil)
-                
+                performSegue(withIdentifier: "Login", sender: self)
             default: break
             }
         }
-        
         updateUI()
     }
     
