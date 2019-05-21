@@ -36,10 +36,4 @@ class OnboardingContentViewController: UIViewController {
         subheadingLabel.text = subHeading
         contentImageView.image = UIImage(named: imageFile)
     }
-    
-    
-    
-    
-    
-    
 }

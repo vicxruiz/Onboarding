@@ -16,7 +16,6 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
     
     weak var onboardingDelegate: OnboardingPageViewControllerDelegate?
     
-    
     var pageHeadings = ["Connect With People Around The World", "Let's Build New Connections With New People", "Feel The Happiness"]
     var pageImages = ["Onboarding1", "Onboarding2", "Onboarding3"]
     var pageSubheadings = ["Users will be able to go live, chat and meet with people near by.", "Connect helps you locate the people around you who are closest from your home town!", "Users will be able to go live, chat and meet with people near by."]
@@ -26,7 +25,7 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
-        
+        delegate = self
         if let startingViewController = contentViewController(at: 0) {
             setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
         }
@@ -34,17 +33,14 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
     
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
         var index = (viewController as! OnboardingContentViewController).index
         index -= 1
-        
         return contentViewController(at: index)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! OnboardingContentViewController).index
         index += 1
-        
         return contentViewController(at: index)
     }
     
@@ -71,6 +67,16 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
         currentIndex += 1
         if let nextViewController = contentViewController(at: currentIndex) {
             setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            if let contentViewController = pageViewController.viewControllers?.first as? OnboardingContentViewController {
+                currentIndex = contentViewController.index
+                
+                onboardingDelegate?.didUpdatePageIndex(currentIndex: currentIndex)
+            }
         }
     }
     
