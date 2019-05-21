@@ -15,10 +15,11 @@
 		5703852F2293BA8500695951 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703852E2293BA8500695951 /* OnboardingContentViewController.swift */; };
 		570385352293BD5000695951 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570385342293BD5000695951 /* OnboardingPageViewController.swift */; };
 		5703853722942EFB00695951 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703853622942EFB00695951 /* OnboardingViewController.swift */; };
-		570385392294367D00695951 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570385382294367D00695951 /* HomeViewController.swift */; };
+		570385392294367D00695951 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570385382294367D00695951 /* HomeCollectionViewController.swift */; };
 		5722659B229495A400125170 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722659A229495A400125170 /* SignInViewController.swift */; };
 		5722659D229495B700125170 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722659C229495B700125170 /* SignUpViewController.swift */; };
 		572265A02294968400125170 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722659F2294968400125170 /* CurrentUser.swift */; };
+		572265A222949D9800125170 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A122949D9800125170 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		5703852E2293BA8500695951 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 		570385342293BD5000695951 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		5703853622942EFB00695951 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		570385382294367D00695951 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		570385382294367D00695951 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		5722659A229495A400125170 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5722659C229495B700125170 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5722659F2294968400125170 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		572265A122949D9800125170 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 				5703852E2293BA8500695951 /* OnboardingContentViewController.swift */,
 				570385342293BD5000695951 /* OnboardingPageViewController.swift */,
 				5703853622942EFB00695951 /* OnboardingViewController.swift */,
-				570385382294367D00695951 /* HomeViewController.swift */,
+				570385382294367D00695951 /* HomeCollectionViewController.swift */,
 				5722659A229495A400125170 /* SignInViewController.swift */,
 				5722659C229495B700125170 /* SignUpViewController.swift */,
 			);
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5722659F2294968400125170 /* CurrentUser.swift */,
+				572265A122949D9800125170 /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,13 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570385392294367D00695951 /* HomeViewController.swift in Sources */,
+				570385392294367D00695951 /* HomeCollectionViewController.swift in Sources */,
 				5722659D229495B700125170 /* SignUpViewController.swift in Sources */,
 				57038517229380CB00695951 /* AppDelegate.swift in Sources */,
 				5722659B229495A400125170 /* SignInViewController.swift in Sources */,
 				570385352293BD5000695951 /* OnboardingPageViewController.swift in Sources */,
 				5703852F2293BA8500695951 /* OnboardingContentViewController.swift in Sources */,
 				572265A02294968400125170 /* CurrentUser.swift in Sources */,
+				572265A222949D9800125170 /* Task.swift in Sources */,
 				5703853722942EFB00695951 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
