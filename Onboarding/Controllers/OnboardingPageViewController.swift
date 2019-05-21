@@ -8,7 +8,13 @@
 
 import UIKit
 
-class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+protocol OnboardingPageViewControllerDelegate: class {
+    func didUpdatePageIndex(currentIndex: Int)
+}
+
+class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    
+    weak var onboardingDelegate: OnboardingPageViewControllerDelegate?
     
     
     var pageHeadings = ["Connect With People Around The World", "Let's Build New Connections With New People", "Feel The Happiness"]
@@ -61,5 +67,11 @@ class OnboardingPageViewController: UIPageViewController, UIPageViewControllerDa
         return nil
     }
     
+    func forwardPage() {
+        currentIndex += 1
+        if let nextViewController = contentViewController(at: currentIndex) {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
+    }
     
 }
