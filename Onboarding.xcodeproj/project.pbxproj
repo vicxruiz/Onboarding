@@ -22,6 +22,7 @@
 		572265A222949D9800125170 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A122949D9800125170 /* Task.swift */; };
 		572265A42294A58400125170 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A32294A58300125170 /* TaskController.swift */; };
 		572265A82294AE9400125170 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572265A72294AE9400125170 /* TaskCollectionViewCell.swift */; };
+		576022392294DF0E003F1784 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576022382294DF0E003F1784 /* Service.swift */; };
 		57E3455E2294BB5F00EC4B6F /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E3455D2294BB5F00EC4B6F /* HomeNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		572265A122949D9800125170 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		572265A32294A58300125170 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		572265A72294AE9400125170 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		576022382294DF0E003F1784 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		57E3455D2294BB5F00EC4B6F /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		570385332293BAFF00695951 /* Styling */ = {
 			isa = PBXGroup;
 			children = (
+				576022382294DF0E003F1784 /* Service.swift */,
 			);
 			path = Styling;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				570385392294367D00695951 /* HomeCollectionViewController.swift in Sources */,
+				576022392294DF0E003F1784 /* Service.swift in Sources */,
 				5722659D229495B700125170 /* SignUpViewController.swift in Sources */,
 				57038517229380CB00695951 /* AppDelegate.swift in Sources */,
 				57E3455E2294BB5F00EC4B6F /* HomeNavigationController.swift in Sources */,

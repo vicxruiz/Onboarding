@@ -27,7 +27,7 @@ class SignInViewController: UIViewController {
     //Updates button ui
     private func updateUI() {
         loginButton.layer.masksToBounds = true
-        loginButton.layer.cornerRadius = 10
+        loginButton.layer.cornerRadius = Service.buttonCornerRadius
     }
     
     //MARK: Actions

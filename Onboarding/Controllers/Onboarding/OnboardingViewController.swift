@@ -19,13 +19,13 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
     @IBOutlet var getStartedButton: UIButton! {
         didSet {
             getStartedButton.layer.masksToBounds = true
-            getStartedButton.layer.cornerRadius = 25
+            getStartedButton.layer.cornerRadius = Service.buttonCornerRadius
         }
     }
     
     @IBOutlet var nextButton: UIButton! {
         didSet {
-            nextButton.layer.cornerRadius = 15.0
+            nextButton.layer.cornerRadius = Service.buttonCornerRadius
             nextButton.layer.masksToBounds = true
         }
     }
