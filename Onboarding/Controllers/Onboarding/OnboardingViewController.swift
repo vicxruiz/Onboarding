@@ -34,13 +34,17 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
         // Do any additional setup after loading the view.
     }
     
     //MARK: Actions
     
     @IBAction func skipButtonTapped(sender: UIButton) {
-        UserDefaults.standard.set(true, forKey: "hasViewedOnboarding")
+        performSegue(withIdentifier: "Login", sender: self)
+    }
+    
+    @IBAction func getStartedButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "Login", sender: self)
     }
     
@@ -50,7 +54,7 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
             case 0...1:
                 onboardingPageViewController?.forwardPage()
             case 2:
-                performSegue(withIdentifier: "Login", sender: self)
+                break
             default: break
             }
         }
@@ -63,12 +67,13 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
             switch index {
             case 0...1:
                 nextButton.setTitle("NEXT", for: .normal)
+                getStartedButton.isHidden = true
+                nextButton.isHidden = false
                 skipButton.isHidden = false
-                
             case 2:
-                nextButton.setTitle("GET STARTED", for: .normal)
+                nextButton.isHidden = true
                 skipButton.isHidden = true
-                
+                getStartedButton.isHidden = false
             default: break
             }
             pageControl.currentPage = index

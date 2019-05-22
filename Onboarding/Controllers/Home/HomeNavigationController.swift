@@ -18,11 +18,14 @@ class HomeNavigationController: UINavigationController {
     //Navigation Logic to handle onboarding
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.bool(forKey: "hasViewedOnboarding") == false {
+            print("false")
             DispatchQueue.main.async {
                 let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController") as! OnboardingViewController
                 self.present(vc, animated: false, completion: nil)
             }
+        } else {
+            print("true")
         }
     }
     
