@@ -16,6 +16,12 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
     var onboardingPageViewController: OnboardingPageViewController?
     
     @IBOutlet var pageControl: UIPageControl!
+    @IBOutlet var getStartedButton: UIButton! {
+        didSet {
+            getStartedButton.layer.masksToBounds = true
+            getStartedButton.layer.cornerRadius = 25
+        }
+    }
     
     @IBOutlet var nextButton: UIButton! {
         didSet {
@@ -35,7 +41,7 @@ class OnboardingViewController: UIViewController, OnboardingPageViewControllerDe
     
     @IBAction func skipButtonTapped(sender: UIButton) {
         UserDefaults.standard.set(true, forKey: "hasViewedOnboarding")
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "Login", sender: self)
     }
     
     @IBAction func nextButtonTapped(sender: UIButton) {
